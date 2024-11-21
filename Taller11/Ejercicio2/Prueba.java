@@ -3,7 +3,7 @@ package Ejercicio2;
 public class Prueba {
     public static void main(String[] args) {
         
-        Empleado gerente = new Gerente("Enrique", 3000, 1000); 
+        Empleado gerente = new Gerente("Enrique", 2500, 1000); 
         System.out.println("Detalles del Gerente:");
         gerente.mostrarDetalles();
 
