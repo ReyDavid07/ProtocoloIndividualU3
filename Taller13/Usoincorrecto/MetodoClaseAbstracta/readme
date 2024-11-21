@@ -1,0 +1,31 @@
+//Intenta definir métodos predeterminados 
+//en una clase abstracta y discute
+//por qué esto no es posible.
+
+
+public abstract class Electrodomestico {
+
+// Intento incorrecto de definir un método predeterminado
+
+ public default void encender() {
+    System.out.println("El electrodoméstico se está encendiendo.");
+ }
+
+}
+
+// Clases abstractas no pueden tener métodos con el modificador default.
+//En lugar de eso, se deben definir métodos concretos (con cuerpo)
+// o abstractos (sin cuerpo), El uso de default es solo válido en interfaces
+
+// LA FORMA CORRECTA SERIA:
+
+
+
+public interface Operable {
+    default void encender() {
+        System.out.println("El dispositivo se está encendiendo.");
+    }
+}
+
+ 
+

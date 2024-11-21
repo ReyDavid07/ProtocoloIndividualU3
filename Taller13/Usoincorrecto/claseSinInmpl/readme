@@ -1,0 +1,34 @@
+//Intenta crear una clase concreta que
+// implemente una interfaz sin proporcionar 
+// implementaciones de sus métodos y observa los errores decompilación.
+
+
+//TENEMOS LA INTERFAZ CONDUCIBLE 
+ 
+public interface Conducible {
+    void conducir();
+}
+
+
+
+public class Bicicleta implements Conducible {
+    // Error: falta implementar el método conducir() de la interfaz Conducible
+}
+
+/*
+El error se produce porque la clase Bicicleta
+está implementando la interfaz Conducible sin 
+proporcionar la implementación del método conducir(),
+lo cual no es permitido.
+   
+   */
+
+//CODIGO CORREGIDO. CON LA IMPLEMENTACION DEL METODO
+
+ public class Bicicleta implements Conducible {
+     @Override
+     public void conducir() {
+         System.out.println("La bicicleta está siendo conducida.");
+     }
+ }
+

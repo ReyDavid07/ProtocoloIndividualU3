@@ -1,0 +1,28 @@
+
+// Se declara en este caso la clase abstracta figura
+
+
+public abstract class Figura {
+    protected String nombre;
+
+    // Constructor
+    public Figura(String nombre) {
+        this.nombre = nombre;
+    }
+
+    // Método abstracto
+    public abstract double calcularArea();
+}
+     
+
+
+/*Si se intenta instanciar la clase asi: */
+
+public class PruebaFigura {
+    public static void main(String[] args) {
+        // Intento incorrecto de instanciar una clase abstracta
+        Figura figura = new Figura("Forma genérica"); // Error de compilación
+    }
+}
+ 
+//Existira un error de compilacion: Figura is abstract; cannot be instantiated
